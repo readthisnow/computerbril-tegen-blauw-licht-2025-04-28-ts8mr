@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computerbril Tegen Blauw Licht | 20% Korting</title>
+    <meta name="description" content="Bescherm je ogen tegen blauw licht met onze premium computerbril. Tijdelijk 20% korting op alle modellen.">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">ComputerBril.org</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Waarom Kiezen</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                </div>
+                <a href="https://computerbril.org/winkel" class="hidden md:inline-flex items-center px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
+                    Bekijk Collectie
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative pt-32 pb-24 bg-gradient-to-b from-blue-50 to-white overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
+                        Computerbril Tegen Blauw Licht
+                        <span class="block text-blue-600 mt-4">Nu 20% Korting!</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-12">Nog maar <span class="text-red-600 font-semibold">8 mensen</span> gingen je voor vandaag. Bescherm je ogen tegen schadelijk blauw licht.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://computerbril.org/winkel" class="inline-flex items-center justify-center px-8 py-4 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
+                            Bekijk Aanbiedingen
+                        </a>
+                        <a href="#features" class="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-blue-600 text-blue-600 font-medium hover:bg-blue-50 transition-all duration-300">
+                            Lees Meer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Waarom Onze Computerbril?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Beschermt Tegen Blauw Licht</h3>
+                        <p class="text-gray-600">Nog maar 3 brillen beschikbaar met premium coating tegen blauw licht.</p>
+                    </div>
+                    <!-- More feature cards... -->
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Voordelen van Onze Brillen</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Benefits content -->
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Veelgestelde Vragen</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div x-data="{open: false}" class="border-b border-gray-200">
+                        <button @click="open = !open" class="flex justify-between items-center w-full py-4 text-left">
+                            <span class="text-lg font-medium">Hoe lang duurt de levering?</span>
+                            <span class="ml-6">
+                                <svg class="w-6 h-6" :class="{'rotate-180': open}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div x-show="open" x-collapse class="pb-4">
+                            <p class="text-gray-600">Levering binnen 1-2 werkdagen in heel Nederland.</p>
+                        </div>
+                    </div>
+                    <!-- More FAQ items -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-blue-600 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Profiteer Nu van 20% Korting!</h2>
+                <p class="text-xl mb-12">Nog maar <span class="font-bold">5 brillen</span> beschikbaar met deze aanbieding</p>
+                <a href="https://computerbril.org/winkel" class="inline-flex items-center px-8 py-4 rounded-full bg-white text-blue-600 font-medium hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
+                    Bekijk de Collectie
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">ComputerBril.org</h3>
+                    <p class="mb-4">Bescherm je ogen tegen schadelijk blauw licht</p>
+                    <a href="mailto:support@example.com" class="text-blue-400 hover:text-blue-300">support@example.com</a>
+                </div>
+                <!-- More footer columns -->
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-sm text-gray-400">
+                <p>&copy; 2024 ComputerBril.org. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
